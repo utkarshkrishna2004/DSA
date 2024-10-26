@@ -41,11 +41,12 @@ int main() {
         cout << "enter the element to search: " << endl;
         cin >> target;
 
-        int result = hash[target];
-        cout << target << " occours: " << result << " times" << endl;
+        cout << target << " occours: " << hash[target] << " times" << endl;
     }
 
     return 0;
 }
 
-// This method worked because the range of indexes that can appear is very small, but it fails for a big range, eg, what if the range be 10^9
+// In this approach, we did a single pre-computation and all the queries got resolved in one go
+
+// But, this method worked because the range of indexes that can appear is very small, but it fails for a big range, eg, what if the range be 10^9
